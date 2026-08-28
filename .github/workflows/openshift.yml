@@ -26,6 +26,10 @@
 
 name: OpenShift
 
+permissions:
+  contents: read
+  packages: write
+
 env:
   # 🖊️ EDIT your repository secrets to log into your OpenShift cluster and set up the context.
   # See https://github.com/redhat-actions/oc-login#readme for how to retrieve these values.
