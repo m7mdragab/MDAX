@@ -21,6 +21,9 @@
 
 name: Appknox
 
+permissions:
+  contents: read
+
 on:
   push:
     branches: [ "main" ]
@@ -28,6 +31,9 @@ on:
     branches: [ "main" ]
 jobs:
   appknox:
+    permissions:
+      contents: read
+      security-events: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
