@@ -17,6 +17,10 @@ on:
   schedule:
     - cron: '29 2 * * 6'
 
+permissions:
+  contents: read
+  security-events: write
+
 jobs:
   SCS:
     runs-on: windows-latest
